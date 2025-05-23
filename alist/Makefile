@@ -12,7 +12,7 @@ PKG_WEB_VERSION:=3.44.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://codeload.github.com/AliciaLEO/alist/tar.gz/refs/tags/v$(PKG_VERSION)
+PKG_SOURCE_URL:=https://codeload.github.com/AliciaLEO/alist/tar.gz/refs/tags/v$(PKG_VERSION)?
 PKG_HASH:=06ff8d9232ac4dddcbf4293be3aa15436cf5bf304dcf85ab5af5abc7c059f29f
 
 PKG_LICENSE:=GPL-3.0
