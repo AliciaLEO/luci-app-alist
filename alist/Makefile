@@ -37,7 +37,7 @@ GO_PKG_LDFLAGS:= \
 	-X '$(GO_PKG)/v3/internal/conf.BuiltAt=$(shell date '+%Y-%m-%d %H:%M:%S %z')' \
 	-X '$(GO_PKG)/v3/internal/conf.GoVersion=$(shell $(STAGING_DIR_HOSTPKG)/bin/go version | sed 's/go version //')' \
 	-X '$(GO_PKG)/v3/internal/conf.GitAuthor=Xhofe <i@nn.ci>' \
-	-X '$(GO_PKG)/alist/v3/internal/conf.GitCommit=tarball/$(shell echo $(PKG_HASH) | cut -c 1-7)' \
+	-X '$(GO_PKG)/v3/internal/conf.GitCommit=tarball/$(shell echo $(PKG_HASH) | cut -c 1-7)' \
 	-X '$(GO_PKG)/v3/internal/conf.Version=v$(PKG_VERSION) (OpenWrt $(ARCH_PACKAGES))' \
 	-X '$(GO_PKG)/v3/internal/conf.WebVersion=$(PKG_WEB_VERSION)'
 
